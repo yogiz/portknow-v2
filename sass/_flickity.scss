@@ -41,9 +41,11 @@
     img{
       position:absolute;
       top:0;
+      max-width: none;
       width: 100%;
       height: auto;
       min-height: 100%;
+
     }
     .img{
       height: 100%;

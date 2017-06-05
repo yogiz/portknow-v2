@@ -495,7 +495,7 @@ legend {
 		transition: all 0.5s;
 		}
 	li:hover {
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(255, 69, 69, 0.6);
 		> a {color:white;	}
 	}
 	a {	
@@ -615,20 +615,25 @@ legend {
 					z-index: 99;
 					top:50px;
 					left:0px;
-	    			background-color: #555555;
+	    			background-color: #ff4545;
 	    			width: 200px;
 	    			height: auto;
+    			    border-radius: 6px;
+				    border-top-left-radius: 0px;
 	    			li {
 	    				height: 40px;
 	    				width: 100%;
 	    				a {
-							color : #6865cb;
-							font:700 15px/30px 'Roboto';
+							color : #ffffff;
+							font:400 15px/30px 'Roboto';
 							display: table-cell;
 							vertical-align: middle;
 							padding:0px 10px;
+							&:hover{
+								color: #1e0863;
+							    font-weight: 700;
+							}
 						}
-
 	    			}
 				}
 				&:hover {
