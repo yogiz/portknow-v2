@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+//header
+@mixin title_header {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+}
+
+//class hover opacity 
+.hover_op {
+  transition: opacity 0.5s;
+    &:hover {
+        opacity:0.7;
+        }
+}
+
+
+
+//----------- width base content
+
+@mixin basewide {
+      max-width: 1000px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 100% !important;
+}
+
+//----------- centered box
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// ------------------ flex kolom untuk div 
+
+@mixin flex ($flex) {
+  -webkit-border-flex: $flex;
+     -moz-border-flex: $flex;
+      -ms-border-flex: $flex;
+            	 flex: $flex;
+}
+
+@mixin displayflex ($wrap){
+	display : -webkit-flex;
+	display :-moz-flex;
+	display :-ms-flex;
+	display :flex;
+	-webkit-flex-wrap: $wrap;
+  	flex-wrap: $wrap;
+}
+
+// ---------------- animation
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} { @content;}
+  	 @-moz-keyframes #{$animation-name} { @content;}
+  	  @-ms-keyframes #{$animation-name} { @content;}
+  		  @keyframes #{$animation-name} { @content;}
+}
+
+@mixin animation ($str){
+	-webkit-animation: #{$str};
+	   -moz-animation: #{$str};
+		-ms-animation: #{$str};
+			animation: #{$str};
+}
+
+// ---------------------- filter
+@mixin filter ($filter,$filter-value) {
+
+	-webkit-filter:#{$filter}unquote("(")#{$filter-value}unquote(")");
+	   -moz-filter:#{$filter}unquote("(")#{$filter-value}unquote(")");
+		-ms-filter:#{$filter}unquote("(")#{$filter-value}unquote(")");
+			filter:#{$filter}unquote("(")#{$filter-value}unquote(")");
+}
+
+
+//--------------------------- transform 
+@mixin transform ($transform,$transform-value) {
+  -webkit-transform: #{$transform}unquote("(")#{$transform-value}unquote(")");
+  -moz-transform: #{$transform}unquote("(")#{$transform-value}unquote(")");
+  -o-transform: #{$transform}unquote("(")#{$transform-value}unquote(")");
+  -ms-transform: #{$transform}unquote("(")#{$transform-value}unquote(")");
+  transform: #{$transform}unquote("(")#{$transform-value}unquote(")");
+}
+

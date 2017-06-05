@@ -1,0 +1,237 @@
+.jetpack_subscription_widget {
+	form > p {
+			margin:0 !important;
+	}
+}
+
+//google translate
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+    } 
+body {
+    top: 0px !important; 
+    }
+
+
+
+.mailchimp-box{
+	background: #ff4545;
+    padding: 10px;
+    border-radius: 3px;
+    > p {
+    	font: 400 17px 'Roboto';
+	    margin: 10px 0;
+    }
+    h5 { margin: 10px 0;}
+    .mc4wp-form-fields{
+    	text-align: center;
+    	p{
+    		margin:2px;
+    		input[type="text"], input[type="email"] {
+    			width: 100%;padding: 10px 6px;
+			    border: solid 1px #ffffff;
+			    border-radius: 4px;
+			    font: 300 16px/18px 'Roboto' !important;
+			    background-color: rgb(167, 47, 47);
+			    color: black !important;
+			    width: 100%;
+		        min-height: 40px;
+    		}
+    		input[type="submit"] {
+    			padding: 10px 15px;
+			    border-radius: 4px;
+			    margin-top: 10px;
+		        min-height: 40px;
+    		}
+    	}
+    }
+}
+@media only screen and (max-width: 720px) {
+
+	.mailchimp-box{
+	    .mc4wp-form-fields{
+	    	p{
+	    		label{display:block;}
+	    		input[type="text"], input[type="email"] {
+    			    display: inline-block;
+				    width: 72%;
+				    vertical-align: top;
+	    		}
+	    		input[type="submit"] {
+    			    display: inline-block;
+				    min-height: 40px;
+				    vertical-align: top;
+				    margin: 0;
+	    		}
+	    	}
+	    }
+	}
+
+}
+
+.widget_facebook_likebox{
+	text-align:center;
+}
+
+// custom widget penulis
+.penulis-container {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(26, 0, 70, 0.12);
+    margin: 20px 0;
+    h4.penulis{
+    	margin: 0;
+	    font: 700 11px/12px 'Roboto';
+	    color: #ababab;
+    }
+    div.penulis {
+    	font: 500 16px/18px 'Roboto';
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+	.penulis-container {
+	    position: absolute;
+	    top: 380px;
+	    right: 0px;
+	    padding: 8px;
+	    background: #e8e8e8;
+	    border: 0px;
+	    h4.penulis{
+			display: none;
+	    }
+	    div.penulis {
+	    	font: 500 14px/12px 'Roboto';
+	    }
+	}
+}
+
+
+//custom widget daftar isi
+#csw-daftarisi {
+  display:block;
+  width:100%;
+  .csw-title {
+    text-align: center;
+    color: #1e0863;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .csw-container{
+    font: 300 15px/17px 'Roboto';
+    .csw-box{
+      margin:10px 0;
+      div{
+        background-color: #ff4545;
+        padding: 10px 5px;
+        border-radius:4px;
+        a {
+          text-decoration: none;
+          color:white;
+          font-weight:bold;
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    .csw-box.active {
+      div {
+        background-color:#505050;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+	#csw-daftarisi {
+		display: none;
+	}
+}
+
+
+
+// click to tweet
+.bctt-ctt-text a {
+    color: #999 !important;
+    font-size: 1.2em !important;
+}
+
+
+
+// ------------- tambahan post ----------
+
+//tampilan tabel
+
+#tbp-container {
+  width:100%;
+  display:block;
+  .tbp-box{
+  	&:nth-child(1){background:#c74545;}
+  	&:nth-child(2){background:#12879a;}
+  	&:nth-child(3){background:#596902;}
+  	&:nth-child(4){background:#5a5a5a;}
+    display:block;
+    text-align:center;
+    div {
+      display:table-cell;
+      text-align:left;
+      padding: 20px;
+      color:white;
+      font: 300 17px/23px 'Roboto';
+    }
+    .tbp-main {
+    	width: 32%;
+	    border-right: 1px solid white;
+    }
+    .tbp-desc {
+    	p {margin:0;}
+    }
+  }
+
+// ---- single box
+  .tbs-box {
+    display:block;
+    text-align:center;
+    div {
+		display:block;
+		color:white;
+		padding:20px;
+		max-width:200px;
+		margin: 0 auto;
+		transition: all .2s ease-in-out;
+		a {
+			color:white;
+		}
+		&:hover{transform: scale(1.1); }
+		&:nth-child(1){background: #9179d8;}	
+		&:nth-child(2){background: #725bb7;}	
+		&:nth-child(3){background: #5d479e;}	
+		&:nth-child(4){background: #452f88;}	
+		&:nth-child(5){background: #301a75;}	
+		&:nth-child(6){background: #1e0863;}		    
+    }
+  }
+}
+
+.widget_top-posts {
+  h2 {
+        text-align: left;
+  }
+  ul {
+    li {
+          text-align: left;
+          line-height: 1;
+          margin-bottom: 1em;
+      a {
+          font-weight: normal;
+          font-size: 16px;
+      }
+    }
+  }
+}
+
+// digi profe
+
+.notranslate {
+  display: none !important;
+}

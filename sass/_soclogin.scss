@@ -1,0 +1,46 @@
+/*
+* Customize 'Connect with:' label
+*/
+.wp-social-login-connect-with {
+	text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+ 
+.wp-social-login-provider-list { 
+	text-align: center;
+	margin-bottom: 15px; 
+}
+ 
+/*
+* Customize the providers buttons
+*/
+.wp-social-login-provider {
+	width: 73px;
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+    font-size: 15px;
+    /* font-weight: bold; */
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff !important;
+    transition: 0.5s ease-out;
+}
+ 
+.wp-social-login-provider:hover {     box-shadow: 4px 3px 1px #525050; color: #ffffff !important; }
+ 
+/*
+* Set the background color for each provider buttons
+*/
+.wp-social-login-provider-facebook:hover  { background-color: #3b5998; }
+.wp-social-login-provider-wordpress:hover   { background-color: #00acee; }
+.wp-social-login-provider-google:hover    { background-color: #dd4b39; }
+
+ 
+/*
+* Changing the background color for each button on mouse hover
+*/
+.wp-social-login-provider-facebook{ background-color: #2f4679; }
+.wp-social-login-provider-wordpress { background-color: #0089bd; }
+.wp-social-login-provider-google  { background-color: #b03b2d; } 

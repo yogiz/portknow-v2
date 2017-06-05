@@ -1,0 +1,60 @@
+@media only screen and (max-width : 900px) {
+
+//--------- content -------
+.site-header {
+		.top-head {
+			.site-branding {
+				@include flex(1) ;
+			}
+		}
+		.bot-head {
+			.as {
+				background-size:initial;
+				background-position: 50% 50%;
+			}
+			// .site-description {
+			// 	font: 300 20px/30px 'Roboto';
+			// 	border-bottom: none;
+			// 	&:after{
+			// 		bottom:-30px;
+			// 	}			
+			// }
+		}
+}
+.menu-primary-container {
+	z-index: 10000000;
+	&:before{ display:none;}
+	> ul {
+		li {
+			padding: 0px 0px;
+			a {padding-left:15px; color:white;}
+			ul {
+				display: block;
+				position : initial;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.image-frame {
+
+	ul {
+		li {
+		    height: 115px;
+		} 
+	}
+}
+
+.cat-su-container {
+	padding-left:20px;
+}
+
+.entry-header {
+	.entry-title {
+		font: 500 35px 'Roboto Condensed';
+	}
+}
+//----------end content ---------
+
+}
